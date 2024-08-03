@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen">
-      <Image src="/1351278.png" alt="" layout="fill" className="object-cover z-0" />
+      <Image src="/1351278.png" alt="Background Image" layout="fill" className="object-cover z-0" />
       <div className="absolute top-10 left-10 z-40">
         <h1 className="text-8xl">Welcome to the Pokedex</h1>
         <p>
