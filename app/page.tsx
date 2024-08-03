@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-
 interface PokemonData {
   name: string;
   img: string;
@@ -49,33 +48,33 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen">
-    <img src="/1351278.png" alt="" className="fixed top-0 left-0 w-full h-full object-cover z-0" />
-    <div className="absolute top-10 left-10 z-40">
-      <h1 className="text-8xl text-lime-200">Welcome to the Pokedex</h1>
-      <p>
-        Enter the name of your favorite Pokemon to get started and search away,
-        <span className="text-gradient-to-r from-red-600 via-red-100 to-red-600 text-3xl">
-          Gotta Catch 'Em All!
-        </span>
-      </p>
-    </div>
-    <div className="relative flex flex-col items-center justify-center min-h-screen z-30 py-10">
-      <div className="w-96 max-w-md p-8 bg-gradient-to-r from-rose-400 to-red-500 rounded-lg flex flex-col items-center justify-center">
-        <input type="text" id="pname" placeholder="Enter Pokemon name" className="mb-4 p-2 rounded text-slate-800" />
-        <button onClick={fetchData} className="p-2 bg-purple-500 rounded text-white">Get Pokemon</button>
-        {pokemonData && (
-          <>
-            <Image src={pokemonData.img} alt="Pokemon Image" width={96} height={96} />
-            <p id="pokeInfo">
-              Name: {pokemonData.name}<br />
-              Type: {pokemonData.types}<br />
-              Abilities: {pokemonData.abilities}<br />
-            </p>
-          </>
-        )}
-        {error && <p id="pokeInfo" className="text-red-500">{error}</p>}
+      <Image src="/1351278.png" alt="" layout="fill" className="object-cover z-0" />
+      <div className="absolute top-10 left-10 z-40">
+        <h1 className="text-8xl">Welcome to the Pokedex</h1>
+        <p>
+          Enter the name of your favorite Pokemon to get started and search away,
+          <span className="text-3xl">
+            Gotta Catch &apos;Em All!
+          </span>
+        </p>
       </div>
-    </div>
-  </main>
+      <div className="relative flex flex-col items-center justify-center min-h-screen z-30 py-10">
+        <div className="w-96 max-w-md p-8 bg-gradient-to-r from-purple-600 via-fuchsia-600 to-rose-600 rounded-lg flex flex-col items-center justify-center">
+          <input type="text" id="pname" placeholder="Enter Pokemon name" className="mb-4 p-2 rounded" />
+          <button onClick={fetchData} className="p-2 bg-purple-500 rounded text-white">Get Pokemon</button>
+          {pokemonData && (
+            <>
+              <Image src={pokemonData.img} alt="Pokemon Image" width={96} height={96} />
+              <p id="pokeInfo">
+                Name: {pokemonData.name}<br />
+                Type: {pokemonData.types}<br />
+                Abilities: {pokemonData.abilities}<br />
+              </p>
+            </>
+          )}
+          {error && <p id="pokeInfo" className="text-red-500">{error}</p>}
+        </div>
+      </div>
+    </main>
   );
 }
