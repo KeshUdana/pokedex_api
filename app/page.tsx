@@ -50,10 +50,10 @@ export default function Home() {
     <main className="relative min-h-screen">
       <Image src="/1351278.png" alt="Background Image" layout="fill" className="object-cover z-0" />
       <div className="absolute top-10 left-10 z-40">
-        <h1 className="text-8xl">Welcome to the Pokedex</h1>
+        <h1 className="text-8xl text-lime-200">Welcome to the Pokedex</h1>
         <p>
           Enter the name of your favorite Pokemon to get started and search away,
-          <span className="text-3xl">
+          <span className="text-3xl text-lime-400">
             Gotta Catch &apos;Em All!
           </span>
         </p>
