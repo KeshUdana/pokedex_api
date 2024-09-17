@@ -1,5 +1,25 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+---
+
+# Pokémon API - Your Personal Pokédex
+
+This API acts like a Pokédex, providing detailed information about any Pokémon when the user inputs a Pokémon's name. It allows users to retrieve essential data such as types, abilities, stats, and more, making it a simple and efficient tool for all Pokémon enthusiasts.
+
+### Key Features:
+- **Pokémon Lookup by Name**: Users can type in a Pokémon’s name to get instant access to its stats, abilities, types, and other detailed information.
+- **Comprehensive Data**: The API covers a wide range of information about each Pokémon, including their base stats, abilities, and evolution details.
+- **Fast and Reliable**: Optimized for quick responses, ensuring users can retrieve Pokémon data efficiently.
+
+### Technologies:
+- Node.js/Express
+- Pokémon API (Backend)
+- JSON Response Format
+
+Whether you're building a game, website, or just want quick access to Pokémon details, this API serves as a reliable and easy-to-use resource for all things Pokémon.
+
+---
+
 ## Getting Started
 
 First, run the development server:
